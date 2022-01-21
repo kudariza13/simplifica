@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$greyLight: #f9fafb;
+$greyDark: #f3f4f6;
+$purple: #7c3aed;
+$pink: #db2e77;
+$yellow:#f59e0d;
+$mint:#11b981;
+$text:#303645;
+$subtitle:#8a8f9a;
+$select:#e5e7eb;
+$neonGreen: #6eb81b;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: $greyLight;
+}
+
+#sideMenu {
+    background: $greyDark;
+    width: 240px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: 1s;
+}
+
+nav {
+    a {
+        display: block;
+        padding: 15px;
+        border-left: 5px solid transparent;
+        color: $subtitle;
+        //font-weight: 300;
+        transition: all 1s;
+        &.active {
+            background: $select;
+            border-left: 5px solid $subtitle;
+        }
+        &:hover {
+            background: $select;
+            border-left: 5px solid $subtitle;
+            text-decoration: none;
+            color: $subtitle;
+        }
+        .fa {
+            color: $subtitle;
+            //display: inline-block;
+            width: 30px;
+        }
+    }
+}
+
+header {
+    background: #fff;
+    padding: 10px;
+    margin-left: 240px;
+    .search-area {
+        display: inline-block;
+        .fa {
+            color: $greyDark;
+        }
+        input[type="text"] {
+            background: transparent;
+            border: none;
+            //border-bottom: 1px solid $greyLight;
+            color: $neonGreen;
+            padding: 8px 10px;
+            //width: 60%;
+            &:hover {
+                background: $greyLight;
+            }
+        }
+    }
+    .header-area {
+        display: inline-block;
+        float: right;
+        padding: 8px;
+        a {
+            display: inline-block;
+            padding-right: 20px;
+            color: #aaa;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
