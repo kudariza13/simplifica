@@ -5,7 +5,7 @@
     </div>
     <div class="users">
         <div class="img-wrap">
-            <img src="https://i.pravatar.cc/48" alt="" class="circle" />
+            <img src="https://i.pravatar.cc/48" alt="" />
         </div>
         <div class="details">
             <div class="title">Jessy Schwarz</div>
@@ -23,9 +23,9 @@
     </nav>
     <div class="teams">
         <h3>TEAMS</h3>
-        <p><i class="fa fa-circle purple" aria-hidden="true"></i> <span> Engineering</span></p>
-        <p><i class="fa fa-circle mint"></i> <span> Human Resources</span></p>
-        <p><i class="fa fa-circle yellow"></i> <span> Customer Success</span></p>
+        <p class="text"><i class="fa fa-circle fa-sm purple" aria-hidden="true"></i> <span> Engineering</span></p>
+        <p class="text"><i class="fa fa-circle fa-sm mint"></i> <span> Human Resources</span></p>
+        <p class="text"><i class="fa fa-circle fa-sm yellow"></i> <span> Customer Success</span></p>
     </div>
 </section>
 
@@ -37,7 +37,9 @@
     </div>
 </header>
 <section class="contents">
+    <h3 style="margin-left: 25px;">PINNED PROJECTS</h3>
     <div class="cards">
+
         <div class="card">
             <h5 class="initials bg-pink">GA</h5>
             <p class="card-text">GraphQL Asteroid<br/><span class="">12 Members</span></p>
@@ -55,7 +57,50 @@
             <p class="card-text">iOS App<br/><span class="">2 Members</span></p>
         </div>
     </div>
-    <div class="separator"></div>
-    <div class="list"></div>
+
+    <div class="type-list titles border-bot">
+        <ul>
+            <li>
+                <div class="mat-toolbar">
+                    <div class="mat-toolbar-tools">
+                        <div class="q-project">PROJECT</div>
+                        <div class="q-members">MEMBERS</div>
+                        <div class="q-last">LAST UPDATED</div>
+                        <div class="q-edit"></div>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="po-wo-invoices-list">
+        <ul>
+            <li *ngFor="let number of [1,2,3,4,5,6,7,8,9]">
+                <div class="mat-toolbar">
+                    <div class="mat-toolbar-tools">
+                        <div class="q-project">
+                            <p class="text"><i class="fa fa-circle purple fa-sm" aria-hidden="true"></i> <span> Engineering</span></p>
+                        </div>
+                        <div class="q-members text">
+                            <div class="avatar-container">
+                                <div class="avatar-container-item"><img src="https://i.pravatar.cc/48" alt="" /></div>
+                                <div class="avatar-container-item"><img src="https://i.pravatar.cc/58" alt="" /></div>
+                                <div class="avatar-container-item"><img src="https://i.pravatar.cc/81" alt="" /></div>
+                                <div class="avatar-container-item"><img src="https://i.pravatar.cc/18" alt="" /></div>
+                                <div class="avatar-container-item"><img src="https://i.pravatar.cc/38" alt="" /></div>
+                                <div class="avatar-container-more">+8</div>
+                            </div>
+                        </div>
+                        <div class="q-last text">
+                            March 17, 2020
+                        </div>
+                        <div class="q-edit text">
+                            <span class="purple">Edit</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </section>
 <router-outlet></router-outlet>
