@@ -1,29 +1,61 @@
 <section id="sideMenu">
+    <div class="side-title">
+        <img src="../assets/images/logo.svg" alt="">
+        <h1>workflow</h1>
+    </div>
+    <div class="users">
+        <div class="img-wrap">
+            <img src="https://i.pravatar.cc/48" alt="" class="circle" />
+        </div>
+        <div class="details">
+            <div class="title">Jessy Schwarz</div>
+            <div class="caption">@jessyschwarz</div>
+        </div>
+    </div>
     <div class="search-area">
         <i class="fa fa-search" aria-hidden="true"></i>
-        <input type="text">
+        <input type="text" placeholder="Search">
     </div>
     <nav>
         <a href="#" class="active"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-        <a href="#"><i class="fa fa-sticky-note-o" aria-hidden="true"></i> What's New</a>
-        <a href="#"><i class="fa fa-bookmark-o" aria-hidden="true"></i> Get Started</a>
-        <a href="#"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Accessiblity</a>
-        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Community</a>
-        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> License</a>
+        <a href="#"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> My tasks</a>
+        <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Recent</a>
     </nav>
+    <div class="teams">
+        <h3>TEAMS</h3>
+        <p><i class="fa fa-circle purple" aria-hidden="true"></i> <span> Engineering</span></p>
+        <p><i class="fa fa-circle mint"></i> <span> Human Resources</span></p>
+        <p><i class="fa fa-circle yellow"></i> <span> Customer Success</span></p>
+    </div>
 </section>
 
 <header>
+    <h2 class="section-title">Home</h2>
     <div class="header-area">
-        <button>Share</button>
-        <button>Create</button>
-        <!-- <a href="#">+ Add</a>
-        <a href="#" class="notification"><i class="fa fa-bell-o" aria-hidden="true"></i>
- <span class="circle">3</span></a>
-        <a href="#">
-            <div class="user-img"></div>
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-        </a> -->
+        <button class="max-button btn-secondary">Share</button>
+        <button class="max-button btn-primary">Create</button>
     </div>
 </header>
+<section class="contents">
+    <div class="cards">
+        <div class="card">
+            <h5 class="initials bg-pink">GA</h5>
+            <p class="card-text">GraphQL Asteroid<br/><span class="">12 Members</span></p>
+        </div>
+        <div class="card">
+            <h5 class="initials bg-purple">NB</h5>
+            <p class="card-text">New Benefits<br/><span class="">8 Members</span></p>
+        </div>
+        <div class="card">
+            <h5 class="initials bg-yellow">OE</h5>
+            <p class="card-text">Onboarding<br/><span class="">14 Members</span></p>
+        </div>
+        <div class="card">
+            <h5 class="initials bg-mint">IA</h5>
+            <p class="card-text">iOS App<br/><span class="">2 Members</span></p>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <div class="list"></div>
+</section>
 <router-outlet></router-outlet>
