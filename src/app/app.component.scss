@@ -238,10 +238,10 @@ header {
         margin: 10px 25px;
         .card {
             border: 1px solid $select;
-            width: 200px;
+            width: 220px;
             box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.12);
             display: grid;
-            grid-template-columns: 60px 1fr;
+            grid-template-columns: 60px 1fr 35px;
             border-radius: 6px;
             h5.initials {
                 margin: 0;
@@ -263,6 +263,43 @@ header {
                     color: $text;
                     font-weight: 500;
                 }
+            }
+            div a,
+            .dropdown-btn {
+                display: inline-block;
+                color: $text;
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+            }
+            div a:hover,
+            .dropdown:hover .dropdown-btn {
+                background-color: $select;
+            }
+            div.dropdown {
+                display: inline-block;
+                align-self: center;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 166px;
+                box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown-content a:hover {
+                background-color: #ccc
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
             }
         }
     }
